@@ -1,0 +1,23 @@
+# VS Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Compiled Java class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
