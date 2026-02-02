@@ -1,3 +1,4 @@
+// Write a Java program to multiply two binary numbers
 import java.util.*;
 
 public class binary_mul {
