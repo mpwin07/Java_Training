@@ -11,25 +11,23 @@ public class LC424 {
         String s = sc.nextLine();  // uppercase string
         int k = sc.nextInt();
 
-        int[] count = new int[26];
-        int left = 0;
-        int maxCount = 0;
-        int ans = 0;
+        int[] count = new int[26]; 
+        int l = 0;
+        int maxf = 0;
+        int res = 0;
 
-        for (int right = 0; right < s.length(); right++) {
+        for (int r = 0; r < s.length(); r++) {
 
-            count[s.charAt(right) - 'A']++;
-            maxCount = Math.max(maxCount, count[s.charAt(right) - 'A']);
-
-            // If window invalid → shrink
-            while ((right - left + 1) - maxCount > k) {
-                count[s.charAt(left) - 'A']--;
-                left++;
+            count[s.charAt(r) - 'A']++;
+            maxf = Math.max(maxf, count[s.charAt(r) - 'A']);
+            while ((r - l + 1) - maxf > k) {
+                count[s.charAt(l) - 'A']--;
+                l++;
             }
 
-            ans = Math.max(ans, right - left + 1);
+            res = Math.max(res, r - l + 1);
         }
 
-        System.out.println(ans);
+        System.out.println(res);
     }
 }
