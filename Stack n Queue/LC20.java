@@ -1,0 +1,26 @@
+// VAlid Parentheses
+
+import java.util.HashMap;
+
+class Solution{
+    public boolean isValid(String s){
+        Stack<Character> stack = new Stack<>();
+        HashMap<Character, Character> map = new HashMap<>();
+        map.put(')' , '(');
+        map.put('}' , '{');
+        map.put(']' , '[');
+
+        for(char c : s.toCharArray()){
+            if(map.containsKey(map)){
+                if(stack.isEmpty() && stack.peek() == map.get(c)){
+                    stack.pop();
+                }
+                else return false;
+            }
+            else{
+                stack.push(c);
+            }
+        }
+        return stack.isEmpty();
+    }
+}
