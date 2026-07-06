@@ -6,7 +6,6 @@
 
 // Find and return the maximum profit you can achieve.
 
-
 class Solution {
     public int maxProfit(int[] prices) {
         int profit = 0;
