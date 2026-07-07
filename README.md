@@ -88,6 +88,3 @@ Sort Items by Groups Respecting Dependencies → 1203
 15 Days placement Training:
 
 Single day contains - 1 Easy, 1 Medium, 1 Hard
-
-
-Practicing to get into the product batch 
