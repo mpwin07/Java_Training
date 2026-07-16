@@ -1,7 +1,6 @@
 //1518. Water Bottles
 
 import java.util.Scanner;
-
 public class easy {
 
     public int numWaterBottles(int numBottles, int numExchange) {
@@ -25,7 +24,7 @@ public class easy {
         //System.out.print("Enter exchange rate: ");
         int numExchange = sc.nextInt();
 
-        Solution obj = new Solution();
+        easy obj = new easy();
         int result = obj.numWaterBottles(numBottles, numExchange);
 
         System.out.println(result);
